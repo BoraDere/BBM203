@@ -8,6 +8,7 @@ void Leaderboard::insert_new_entry(LeaderboardEntry * new_entry) {
 
 void Leaderboard::write_to_file(const string& filename) {
     // TODO: Write the latest leaderboard status to the given file in the format specified in the PA instructions
+    
 }
 
 void Leaderboard::read_from_file(const string& filename) {

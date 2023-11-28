@@ -1,0 +1,9 @@
+g++ -g -std=c++11 main.cpp Block.h BlockFall.h BlockFall.cpp GameController.h GameController.cpp LeaderboardEntry.h LeaderboardEntry.cpp Leaderboard.h Leaderboard.cpp -o blockfall
+
+valgrind --leak-check=yes blockfall grid.dat blocks.dat commands.dat GRAVITY_ON leaderboard.txt BlockBuster
+
+valgrind --leak-check=yes -s ./blockfall grid.dat blocks.dat commands.dat GRAVITY_ON leaderboard.txt BlockBuster
+
+https://discord.com/channels/835886251508236348/1166464195223621714
+
+./blockfall grid.dat blocks.dat commands.dat GRAVITY_ON leaderboard.txt BlockBuster
