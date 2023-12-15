@@ -18,4 +18,5 @@ ostream &operator<<(ostream &os, const Client &client) {
 
 Client::~Client() {
     // TODO: Free any dynamically allocated memory if necessary.
+    
 }

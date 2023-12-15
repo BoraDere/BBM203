@@ -1,9 +1,5 @@
-g++ -g -std=c++11 main.cpp Block.h BlockFall.h BlockFall.cpp GameController.h GameController.cpp LeaderboardEntry.h LeaderboardEntry.cpp Leaderboard.h Leaderboard.cpp -o blockfall
+g++ -std=c++11 ApplicationLayerPacket.cpp ApplicationLayerPacket.h Client.cpp Client.h Log.cpp Log.h main.cpp Network.cpp Network.h NetworkLayerPacket.cpp NetworkLayerPacket.h Packet.cpp Packet.h PhysicalLayerPacket.cpp PhysicalLayerPacket.h -o HUBBMNET
 
-valgrind --leak-check=yes blockfall grid.dat blocks.dat commands.dat GRAVITY_ON leaderboard.txt BlockBuster
-
-valgrind --leak-check=yes -s ./blockfall grid.dat blocks.dat commands.dat GRAVITY_ON leaderboard.txt BlockBuster
+valgrind --leak-check=full --show-leak-kinds=all -s ./HUBBMNET clients.dat routing.dat commands.dat 20 0706 0607
 
 https://discord.com/channels/835886251508236348/1166464195223621714
-
-./blockfall grid.dat blocks.dat commands.dat GRAVITY_ON leaderboard.txt BlockBuster

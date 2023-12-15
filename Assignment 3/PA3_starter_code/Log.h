@@ -21,8 +21,7 @@ enum class ActivityType {
 class Log {
 public:
 
-    Log(const string &timestamp, const string &message, int number_of_frames, int number_of_hops, const string &client_id,
-        const string &receiver_id, bool success, ActivityType type);
+    Log(const string &timestamp, const string &message, int number_of_frames, int number_of_hops, const string &client_id, const string &receiver_id, bool success, ActivityType type);
     ~Log();
 
     string timestamp;

@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
     // Read from input files
     vector<Client> clients = HUBBMNET->read_clients(argv[1]);
     HUBBMNET->read_routing_tables(clients, argv[2]);
-    vector<string> commands = HUBBMNET->readCommands(argv[3]);
+    vector<string> commands = HUBBMNET->read_commands(argv[3]);
 
     // Get additional parameters from the cmd arguments
     int message_limit = stoi(argv[4]);
