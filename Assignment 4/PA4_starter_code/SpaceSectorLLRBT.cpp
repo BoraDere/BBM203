@@ -85,9 +85,10 @@ Sector* SpaceSectorLLRBT::insert(Sector* node, int x, int y, int z) {
 
     if (x < node->x || (x == node->x && y < node->y) || (x == node->x && y == node->y && z < node->z)) {
         node->left = insert(node->left, x, y, z);
-
+        node->left->parent = node;
     } else {
         node->right = insert(node->right, x, y, z);
+        node->right->parent = node;
     }
 
     // Fix up any right-leaning links
@@ -118,6 +119,7 @@ void SpaceSectorLLRBT::insertSectorByCoordinates(int x, int y, int z) {
     if (root == nullptr) {
         root = new_sector;
         root->color = BLACK; // Root is always BLACK
+        root->parent = nullptr;
     } 
     else {
         root = insert(root, x, y, z);
