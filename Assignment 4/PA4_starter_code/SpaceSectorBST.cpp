@@ -71,6 +71,8 @@ void SpaceSectorBST::insertSectorByCoordinates(int x, int y, int z) {
     Sector* new_sector = new Sector(x, y, z);
     new_sector->sector_code = sector_code;
 
+    sectorMap[sector_code] = std::make_tuple(x, y, z);
+
     if (root == nullptr) {
         root = new_sector;
         return;
@@ -110,14 +112,56 @@ Sector* SpaceSectorBST::findSuccessor(Sector* node) {
     return node;
 }
 
+Sector* SpaceSectorBST::deleter(Sector* root, int x, int y, int z) {
+    if (root == nullptr) {
+        return root;
+    }
+
+    if (x < root->x || (x == root->x && y < root->y) || (x == root->x && y == root->y && z < root->z)) {
+        root->left = deleter(root->left, x, y, z);
+    }
+    else if ((x > root->x) || (x == root->x && y > root->y) || (x == root->x && y == root->y && z > root->z)) {
+        root->right = deleter(root->right, x, y, z);
+    }
+    else {
+        if (root->left == nullptr) {
+            Sector* temp = root->right;
+            delete root;
+            return temp;
+        }
+        else if (root->right == nullptr) {
+            Sector* temp = root->left;
+            delete root;
+            return temp;
+        }
+
+        // two children
+        Sector* temp = findSuccessor(root->right);
+        cout << root->sector_code << endl;
+        cout << temp->sector_code << endl;
+
+        root->x = temp->x; root->y = temp->y; root->z = temp->z;
+        root->sector_code = temp->sector_code;
+
+        root->right = deleter(root->right, temp->x, temp->y, temp->z);
+    }
+    return root;
+}
+
 void SpaceSectorBST::deleteSector(const std::string& sector_code) {
     // TODO: Delete the sector given by its sector_code from the BST.
     // If the sector to be deleted is a leaf node, simply delete it.
     // If the sector to be deleted has only one child, replace it with its child.
     // If the sector to be deleted has two children, replace it with its in-order successor.
 
+    auto sector = sectorMap.find(sector_code);
 
+    int x, y, z;
+    std::tie(x, y, z) = sector->second;
 
+    root = deleter(root, x, y, z);
+
+    sectorMap.erase(sector);
 }
 
 void SpaceSectorBST::displaySectorsInOrderHelper(Sector* node) {
@@ -175,15 +219,52 @@ void SpaceSectorBST::displaySectorsPostOrder() {
     cout << endl;
 }
 
+Sector* SpaceSectorBST::pathGetter(Sector* root, int x, int y, int z) {
+    if (x < root->x || (x == root->x && y < root->y) || (x == root->x && y == root->y && z < root->z)) {
+        return root->left;
+    }
+    else {
+        return root->right;
+    }
+}
+
 std::vector<Sector*> SpaceSectorBST::getStellarPath(const std::string& sector_code) {
     std::vector<Sector*> path;
     // TODO: Find the path from the Earth to the destination sector given by its
     // sector_code, and return a vector of pointers to the Sector nodes that are on
     // the path. Make sure that there are no duplicate Sector nodes in the path!
+
+    auto final_sector = sectorMap.find(sector_code);
+
+    if (final_sector == sectorMap.end()) {
+        cout << "A path to Dr. Elara could not be found." << endl;
+        return std::vector<Sector*>();
+    }
+
+    int x, y, z;
+    std::tie(x, y, z) = final_sector->second;
+
+    while ((root->x != x) || (root->y != y) || (root->z != z)) {
+        path.push_back(root);
+        root = pathGetter(root, x, y, z);
+    }
+
+    path.push_back(root);
+
     return path;
 }
 
 void SpaceSectorBST::printStellarPath(const std::vector<Sector*>& path) {
     // TODO: Print the stellar path obtained from the getStellarPath() function 
     // to STDOUT in the given format.
+
+    if (!path.empty()) {
+        cout << "The stellar path to Dr. Elara: " << path[0]->sector_code;
+        
+        for (int i = 1; i < path.size(); i++) {
+            cout << "->" << path[i]->sector_code;
+        }
+
+        cout << endl;
+    }
 }

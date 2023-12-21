@@ -5,6 +5,8 @@
 #include <fstream>  
 #include <sstream>
 #include <vector>
+#include <unordered_map>
+#include <tuple>
 
 #include "Sector.h"
 
@@ -27,6 +29,9 @@ public:
     void displaySectorsPreOrderHelper(Sector* node);
     void displaySectorsPostOrderHelper(Sector* node);
     Sector* findSuccessor(Sector* node);
+    Sector* deleter(Sector* root, int x, int y, int z);
+    std::unordered_map<std::string, std::tuple<int, int, int>> sectorMap;
+    Sector* pathGetter(Sector* root, int x, int y, int z);
 };
 
 #endif // SPACESECTORBST_H
