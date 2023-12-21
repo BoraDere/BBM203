@@ -45,6 +45,9 @@ std::string SpaceSectorLLRBT::getSectorCode(int x, int y, int z) {
 }
 
 bool SpaceSectorLLRBT::isRed(Sector* node) {
+    if (!node) {
+        return false; // Null nodes are BLACK
+    }
     return node->color == RED;
 }
 
@@ -89,19 +92,13 @@ Sector* SpaceSectorLLRBT::insert(Sector* node, int x, int y, int z) {
 
     // Fix up any right-leaning links
     if (isRed(node->right) && !isRed(node->left)) {
-        cout << "first if in" << endl;
         node = rotateLeft(node);
-        cout << "first if out" << endl;
     }
     if (isRed(node->left) && isRed(node->left->left)) {
-        cout << "second if in" << endl;
         node = rotateRight(node);
-        cout << "second if out" << endl;
     }
     if (isRed(node->left) && isRed(node->right)) {
-        cout << "third if in" << endl;
         flip(node);
-        cout << "third if out" << endl;
     }
 
     return node;
@@ -124,9 +121,7 @@ void SpaceSectorLLRBT::insertSectorByCoordinates(int x, int y, int z) {
     } 
     else {
         root = insert(root, x, y, z);
-        cout << "post insert" << endl;
         root->color = BLACK; // Root is always BLACK
-        cout << "colored black" << endl;
     }
 }
 
@@ -136,7 +131,8 @@ void SpaceSectorLLRBT::displaySectorsInOrderHelper(Sector* node) {
     }
 
     displaySectorsInOrderHelper(node->left);
-    std::cout << node->sector_code << std::endl;
+    std::string color = node->color ? "RED" : "BLACK";
+    std::cout << color << " sector: " << node->sector_code << std::endl;
     displaySectorsInOrderHelper(node->right);
 }
 
@@ -153,7 +149,8 @@ void SpaceSectorLLRBT::displaySectorsPreOrderHelper(Sector* node) {
         return;
     }
 
-    std::cout << node->sector_code << std::endl;
+    std::string color = node->color ? "RED" : "BLACK";
+    std::cout << color << " sector: " << node->sector_code << std::endl;
     displaySectorsPreOrderHelper(node->left);
     displaySectorsPreOrderHelper(node->right);
 }
@@ -173,7 +170,8 @@ void SpaceSectorLLRBT::displaySectorsPostOrderHelper(Sector* node) {
 
     displaySectorsPostOrderHelper(node->left);
     displaySectorsPostOrderHelper(node->right);
-    std::cout << node->sector_code << std::endl;
+    std::string color = node->color ? "RED" : "BLACK";
+    std::cout << color << " sector: " << node->sector_code << std::endl;
 }
 
 void SpaceSectorLLRBT::displaySectorsPostOrder() {
