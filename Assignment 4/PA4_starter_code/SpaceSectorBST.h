@@ -22,6 +22,11 @@ public:
     void displaySectorsPostOrder();
     std::vector<Sector*> getStellarPath(const std::string& sector_code);
     void printStellarPath(const std::vector<Sector*>& path);
+    std::string getSectorCode(int x, int y, int z);
+    void displaySectorsInOrderHelper(Sector* node);
+    void displaySectorsPreOrderHelper(Sector* node);
+    void displaySectorsPostOrderHelper(Sector* node);
+    Sector* findSuccessor(Sector* node);
 };
 
 #endif // SPACESECTORBST_H
