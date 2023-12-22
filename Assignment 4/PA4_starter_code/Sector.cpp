@@ -1,9 +1,16 @@
 #include "Sector.h"
+#include <cmath>
 
 // Constructor implementation
 
 Sector::Sector(int x, int y, int z) : x(x), y(y), z(z), left(nullptr), right(nullptr), parent(nullptr), color(RED) {
         // TODO: Calculate the distance to the Earth, and generate the sector code
+        distance_from_earth = std::sqrt(x*x + y*y + z*z);
+        sector_code += std::to_string((int)distance_from_earth);
+
+        sector_code += (x == 0 ? 'S' : (x > 0 ? 'R' : 'L'));
+        sector_code += (y == 0 ? 'S' : (y > 0 ? 'U' : 'D'));
+        sector_code += (z == 0 ? 'S' : (z > 0 ? 'F' : 'B'));
 }
 
 Sector::~Sector() {

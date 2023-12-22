@@ -29,20 +29,6 @@ void SpaceSectorBST::readSectorsFromFile(const std::string& filename) {
     }
 }
 
-std::string SpaceSectorBST::getSectorCode(int x, int y, int z) {
-
-    std::string sector_code;
-
-    int distance = std::sqrt(x*x + y*y + z*z);
-    sector_code += std::to_string(distance);
-
-    sector_code += (x == 0 ? 'S' : (x > 0 ? 'R' : 'L'));
-    sector_code += (y == 0 ? 'S' : (y > 0 ? 'U' : 'D'));
-    sector_code += (z == 0 ? 'S' : (z > 0 ? 'F' : 'B'));
-
-    return sector_code;
-}
-
 void SpaceSectorBST::insertSectorByCoordinates(int x, int y, int z) {
     // Instantiate and insert a new sector into the space sector BST map according to the 
     // coordinates-based comparison criteria.
@@ -66,12 +52,9 @@ void SpaceSectorBST::insertSectorByCoordinates(int x, int y, int z) {
     /* The node returned from the initial call of the function (starting at the root) is assigned as the new
     root of the BST.*/
 
-    std::string sector_code = getSectorCode(x, y, z);
-
     Sector* new_sector = new Sector(x, y, z);
-    new_sector->sector_code = sector_code;
 
-    sectorMap[sector_code] = std::make_tuple(x, y, z);
+    sectorMap[new_sector->sector_code] = std::make_tuple(x, y, z);
 
     if (root == nullptr) {
         root = new_sector;
