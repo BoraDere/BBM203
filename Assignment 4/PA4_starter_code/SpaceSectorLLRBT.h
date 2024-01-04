@@ -21,6 +21,7 @@ public:
     void displaySectorsPostOrder();
     std::vector<Sector*> getStellarPath(const std::string& sector_code);
     void printStellarPath(const std::vector<Sector*>& path);
+
     void displaySectorsInOrderHelper(Sector* node);
     void displaySectorsPreOrderHelper(Sector* node);
     void displaySectorsPostOrderHelper(Sector* node);
@@ -31,6 +32,7 @@ public:
     Sector* rotateLeft(Sector* node);
     Sector* rotateRight(Sector* node);
     void flip(Sector* node);
+    void deleteTree(Sector* node);
 };
 
 #endif // SPACESECTORLLRBT_H

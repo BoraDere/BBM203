@@ -8,8 +8,8 @@
 // Base Node Class
 class KDTreeNode {
 public:
-    virtual ~KDTreeNode(); // virtual destructor
-    virtual bool isLeaf() const; // returns if the node is a leaf node or not
+    virtual ~KDTreeNode()  {}; // virtual destructor
+    virtual bool isLeaf() const = 0; // returns if the node is a leaf node or not
 
 };
 
@@ -21,9 +21,16 @@ public:
     KDTreeNode* right;
 
     // Constructor declaration etc
-    kd_tree_inter_node(int split_dimension, double split_value);    
-    ~kd_tree_inter_node() override;
-    bool isLeaf() const override;
+    kd_tree_inter_node(int split_dimension, double split_value)
+    : split_dimension(split_dimension), split_value(split_value), left(nullptr), right(nullptr) {}
+
+    bool isLeaf() const override {
+        return false;
+    }    
+
+    ~kd_tree_inter_node() override {
+
+    }
 
 
 };
@@ -35,11 +42,16 @@ public:
     Dataset data;
 
     // Constructor declaration
-    kd_tree_leaf_node(Dataset dataLabelPairs);
+    kd_tree_leaf_node(Dataset dataLabelPairs) : data(dataLabelPairs) {}
 
     // Overridden virtual methods
-    bool isLeaf() const override;
-    ~kd_tree_leaf_node() override;
+    bool isLeaf() const override {
+        return true; // Leaf node
+    }  
+    
+    ~kd_tree_leaf_node() override {
+        
+    }
 };
 
 #endif // KD_TREE_NODES_H

@@ -1,0 +1,11 @@
+Space sectors inorder traversal:
+103LDB
+98LUB
+99LUB
+76LUF
+107LDB
+89LDB
+24LDF
+0SSS
+101RUF
+126RDB

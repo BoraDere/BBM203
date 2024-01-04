@@ -1,0 +1,212 @@
+Space sectors inorder traversal:
+137LDB
+117LDB
+106LDB
+134LUF
+96LSF
+145LUB
+101LDF
+105LUB
+84LUF
+42LDF
+114LUF
+87LDB
+0SSS
+47RDB
+94RDB
+69RUB
+120RUB
+125RUB
+84RDB
+118RDF
+107RDF
+110RDB
+119RDF
+126RUF
+146RUF
+120RUF
+116RUB
+
+Space sectors preorder traversal:
+0SSS
+137LDB
+114LUF
+134LUF
+117LDB
+106LDB
+145LUB
+96LSF
+84LUF
+101LDF
+105LUB
+42LDF
+87LDB
+69RUB
+47RDB
+94RDB
+84RDB
+120RUB
+125RUB
+107RDF
+118RDF
+119RDF
+110RDB
+116RUB
+120RUF
+146RUF
+126RUF
+
+Space sectors postorder traversal:
+106LDB
+117LDB
+96LSF
+105LUB
+101LDF
+42LDF
+84LUF
+145LUB
+134LUF
+87LDB
+114LUF
+137LDB
+94RDB
+47RDB
+125RUB
+120RUB
+118RDF
+110RDB
+126RUF
+146RUF
+120RUF
+116RUB
+119RDF
+107RDF
+84RDB
+69RUB
+0SSS
+
+The stellar path to Dr. Elara: 0SSS->137LDB->114LUF->134LUF->145LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->137LDB->114LUF
+
+
+
+The stellar path to Dr. Elara: 0SSS->69RUB->84RDB->107RDF->118RDF
+
+
+
+The stellar path to Dr. Elara: 0SSS->137LDB->114LUF->134LUF->145LUB->84LUF->101LDF->105LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS
+
+
+Space sectors inorder traversal:
+BLACK sector: 137LDB
+BLACK sector: 117LDB
+BLACK sector: 106LDB
+RED sector: 134LUF
+BLACK sector: 96LSF
+BLACK sector: 145LUB
+RED sector: 101LDF
+BLACK sector: 105LUB
+BLACK sector: 84LUF
+BLACK sector: 42LDF
+RED sector: 114LUF
+BLACK sector: 87LDB
+BLACK sector: 0SSS
+RED sector: 47RDB
+BLACK sector: 94RDB
+BLACK sector: 69RUB
+RED sector: 120RUB
+BLACK sector: 125RUB
+RED sector: 84RDB
+BLACK sector: 118RDF
+BLACK sector: 107RDF
+BLACK sector: 110RDB
+BLACK sector: 119RDF
+RED sector: 126RUF
+BLACK sector: 146RUF
+BLACK sector: 120RUF
+BLACK sector: 116RUB
+
+Space sectors preorder traversal:
+BLACK sector: 69RUB
+BLACK sector: 84LUF
+RED sector: 134LUF
+BLACK sector: 117LDB
+BLACK sector: 137LDB
+BLACK sector: 106LDB
+BLACK sector: 145LUB
+BLACK sector: 96LSF
+BLACK sector: 105LUB
+RED sector: 101LDF
+BLACK sector: 0SSS
+RED sector: 114LUF
+BLACK sector: 42LDF
+BLACK sector: 87LDB
+BLACK sector: 94RDB
+RED sector: 47RDB
+BLACK sector: 119RDF
+BLACK sector: 107RDF
+RED sector: 84RDB
+BLACK sector: 125RUB
+RED sector: 120RUB
+BLACK sector: 118RDF
+BLACK sector: 110RDB
+BLACK sector: 120RUF
+BLACK sector: 146RUF
+RED sector: 126RUF
+BLACK sector: 116RUB
+
+Space sectors postorder traversal:
+BLACK sector: 137LDB
+BLACK sector: 106LDB
+BLACK sector: 117LDB
+BLACK sector: 96LSF
+RED sector: 101LDF
+BLACK sector: 105LUB
+BLACK sector: 145LUB
+RED sector: 134LUF
+BLACK sector: 42LDF
+BLACK sector: 87LDB
+RED sector: 114LUF
+RED sector: 47RDB
+BLACK sector: 94RDB
+BLACK sector: 0SSS
+BLACK sector: 84LUF
+RED sector: 120RUB
+BLACK sector: 125RUB
+BLACK sector: 118RDF
+RED sector: 84RDB
+BLACK sector: 110RDB
+BLACK sector: 107RDF
+RED sector: 126RUF
+BLACK sector: 146RUF
+BLACK sector: 116RUB
+BLACK sector: 120RUF
+BLACK sector: 119RDF
+BLACK sector: 69RUB
+
+The stellar path to Dr. Elara: 0SSS->84LUF->134LUF->145LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->114LUF
+
+
+
+The stellar path to Dr. Elara: 0SSS->84LUF->69RUB->119RDF->107RDF->84RDB->118RDF
+
+
+
+The stellar path to Dr. Elara: 0SSS->84LUF->134LUF->145LUB->105LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS
+
+

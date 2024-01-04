@@ -1,0 +1,21 @@
+{
+    "left": {
+        "left": null,
+        "node": {
+            "distance_from_earth": 109.59470790143108,
+            "sector_code": "109LDF",
+            "x": -47,
+            "y": -99,
+            "z": 1
+        },
+        "right": null
+    },
+    "node": {
+        "distance_from_earth": 84.32081593533118,
+        "sector_code": "84RDB",
+        "x": 18,
+        "y": -81,
+        "z": -15
+    },
+    "right": null
+}

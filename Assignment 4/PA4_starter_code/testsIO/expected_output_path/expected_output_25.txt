@@ -1,0 +1,132 @@
+Space sectors inorder traversal:
+140LDB
+111LUB
+127LDB
+108LDF
+42LDB
+0SSS
+36RUF
+50RUB
+69RDB
+78RDB
+99RDB
+
+Space sectors preorder traversal:
+0SSS
+42LDB
+127LDB
+140LDB
+111LUB
+108LDF
+36RUF
+99RDB
+78RDB
+69RDB
+50RUB
+
+Space sectors postorder traversal:
+111LUB
+140LDB
+108LDF
+127LDB
+42LDB
+50RUB
+69RDB
+78RDB
+99RDB
+36RUF
+0SSS
+
+The stellar path to Dr. Elara: 0SSS->42LDB->127LDB->140LDB
+
+
+
+The stellar path to Dr. Elara: 0SSS->42LDB->127LDB->140LDB->111LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->42LDB->127LDB
+
+
+
+The stellar path to Dr. Elara: 0SSS->42LDB
+
+
+
+The stellar path to Dr. Elara: 0SSS->36RUF->99RDB->78RDB->69RDB->50RUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->36RUF->99RDB->78RDB->69RDB
+
+
+
+The stellar path to Dr. Elara: 0SSS->36RUF
+
+
+Space sectors inorder traversal:
+BLACK sector: 140LDB
+RED sector: 111LUB
+BLACK sector: 127LDB
+BLACK sector: 108LDF
+BLACK sector: 42LDB
+BLACK sector: 0SSS
+BLACK sector: 36RUF
+RED sector: 50RUB
+BLACK sector: 69RDB
+BLACK sector: 78RDB
+BLACK sector: 99RDB
+
+Space sectors preorder traversal:
+BLACK sector: 0SSS
+BLACK sector: 108LDF
+RED sector: 111LUB
+BLACK sector: 140LDB
+BLACK sector: 127LDB
+BLACK sector: 42LDB
+BLACK sector: 78RDB
+RED sector: 50RUB
+BLACK sector: 36RUF
+BLACK sector: 69RDB
+BLACK sector: 99RDB
+
+Space sectors postorder traversal:
+BLACK sector: 140LDB
+BLACK sector: 127LDB
+RED sector: 111LUB
+BLACK sector: 42LDB
+BLACK sector: 108LDF
+BLACK sector: 36RUF
+BLACK sector: 69RDB
+RED sector: 50RUB
+BLACK sector: 99RDB
+BLACK sector: 78RDB
+BLACK sector: 0SSS
+
+The stellar path to Dr. Elara: 0SSS->108LDF->111LUB->140LDB
+
+
+
+The stellar path to Dr. Elara: 0SSS->108LDF->111LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->108LDF->111LUB->127LDB
+
+
+
+The stellar path to Dr. Elara: 0SSS->108LDF->42LDB
+
+
+
+The stellar path to Dr. Elara: 0SSS->78RDB->50RUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->78RDB->50RUB->69RDB
+
+
+
+The stellar path to Dr. Elara: 0SSS->78RDB->50RUB->36RUF
+
+

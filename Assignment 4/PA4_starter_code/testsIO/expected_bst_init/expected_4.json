@@ -1,0 +1,321 @@
+{
+    "left": {
+        "left": {
+            "left": {
+                "left": null,
+                "node": {
+                    "distance_from_earth": 112.25862995778988,
+                    "sector_code": "112LDB",
+                    "x": -96,
+                    "y": -19,
+                    "z": -55
+                },
+                "right": {
+                    "left": {
+                        "left": null,
+                        "node": {
+                            "distance_from_earth": 137.1459077041674,
+                            "sector_code": "137LDB",
+                            "x": -82,
+                            "y": -94,
+                            "z": -57
+                        },
+                        "right": {
+                            "left": null,
+                            "node": {
+                                "distance_from_earth": 90.79647570252934,
+                                "sector_code": "90LUB",
+                                "x": -76,
+                                "y": 32,
+                                "z": -38
+                            },
+                            "right": null
+                        }
+                    },
+                    "node": {
+                        "distance_from_earth": 107.61970079869205,
+                        "sector_code": "107LDF",
+                        "x": -70,
+                        "y": -21,
+                        "z": 79
+                    },
+                    "right": {
+                        "left": {
+                            "left": {
+                                "left": {
+                                    "left": null,
+                                    "node": {
+                                        "distance_from_earth": 118.93695809125101,
+                                        "sector_code": "118LUB",
+                                        "x": -69,
+                                        "y": 96,
+                                        "z": -13
+                                    },
+                                    "right": null
+                                },
+                                "node": {
+                                    "distance_from_earth": 96.55050491841045,
+                                    "sector_code": "96LDB",
+                                    "x": -60,
+                                    "y": -69,
+                                    "z": -31
+                                },
+                                "right": null
+                            },
+                            "node": {
+                                "distance_from_earth": 135.57654664432192,
+                                "sector_code": "135LUF",
+                                "x": -52,
+                                "y": 86,
+                                "z": 91
+                            },
+                            "right": {
+                                "left": null,
+                                "node": {
+                                    "distance_from_earth": 95.37819457297354,
+                                    "sector_code": "95LDB",
+                                    "x": -45,
+                                    "y": -4,
+                                    "z": -84
+                                },
+                                "right": null
+                            }
+                        },
+                        "node": {
+                            "distance_from_earth": 53.301031884945715,
+                            "sector_code": "53LDF",
+                            "x": -29,
+                            "y": -20,
+                            "z": 40
+                        },
+                        "right": null
+                    }
+                }
+            },
+            "node": {
+                "distance_from_earth": 55.10898293381942,
+                "sector_code": "55LUB",
+                "x": -27,
+                "y": 48,
+                "z": -2
+            },
+            "right": {
+                "left": {
+                    "left": null,
+                    "node": {
+                        "distance_from_earth": 111.26095451684746,
+                        "sector_code": "111LUB",
+                        "x": -27,
+                        "y": 83,
+                        "z": -69
+                    },
+                    "right": null
+                },
+                "node": {
+                    "distance_from_earth": 83.51047838445186,
+                    "sector_code": "83LUF",
+                    "x": -23,
+                    "y": 51,
+                    "z": 62
+                },
+                "right": {
+                    "left": null,
+                    "node": {
+                        "distance_from_earth": 93.57350052231668,
+                        "sector_code": "93LDB",
+                        "x": -16,
+                        "y": -38,
+                        "z": -84
+                    },
+                    "right": {
+                        "left": {
+                            "left": {
+                                "left": {
+                                    "left": null,
+                                    "node": {
+                                        "distance_from_earth": 70.61161377563892,
+                                        "sector_code": "70LDF",
+                                        "x": -12,
+                                        "y": -9,
+                                        "z": 69
+                                    },
+                                    "right": {
+                                        "left": null,
+                                        "node": {
+                                            "distance_from_earth": 112.98229949863828,
+                                            "sector_code": "112LDF",
+                                            "x": -8,
+                                            "y": -85,
+                                            "z": 74
+                                        },
+                                        "right": null
+                                    }
+                                },
+                                "node": {
+                                    "distance_from_earth": 61.1228271597445,
+                                    "sector_code": "61LDB",
+                                    "x": -6,
+                                    "y": -60,
+                                    "z": -10
+                                },
+                                "right": null
+                            },
+                            "node": {
+                                "distance_from_earth": 92.98386956886662,
+                                "sector_code": "92LDB",
+                                "x": -5,
+                                "y": -70,
+                                "z": -61
+                            },
+                            "right": null
+                        },
+                        "node": {
+                            "distance_from_earth": 33.481338085566414,
+                            "sector_code": "33LDB",
+                            "x": -4,
+                            "y": -31,
+                            "z": -12
+                        },
+                        "right": {
+                            "left": null,
+                            "node": {
+                                "distance_from_earth": 96.17172141539321,
+                                "sector_code": "96LUB",
+                                "x": -1,
+                                "y": 68,
+                                "z": -68
+                            },
+                            "right": null
+                        }
+                    }
+                }
+            }
+        },
+        "node": {
+            "distance_from_earth": 105.47985589675405,
+            "sector_code": "105LUF",
+            "x": -1,
+            "y": 78,
+            "z": 71
+        },
+        "right": null
+    },
+    "node": {
+        "distance_from_earth": 0.0,
+        "sector_code": "0SSS",
+        "x": 0,
+        "y": 0,
+        "z": 0
+    },
+    "right": {
+        "left": {
+            "left": {
+                "left": null,
+                "node": {
+                    "distance_from_earth": 108.9816498315198,
+                    "sector_code": "108RDF",
+                    "x": 8,
+                    "y": -47,
+                    "z": 98
+                },
+                "right": null
+            },
+            "node": {
+                "distance_from_earth": 44.37341546466758,
+                "sector_code": "44RUB",
+                "x": 12,
+                "y": 40,
+                "z": -15
+            },
+            "right": null
+        },
+        "node": {
+            "distance_from_earth": 125.83322295800899,
+            "sector_code": "125RUB",
+            "x": 13,
+            "y": 88,
+            "z": -89
+        },
+        "right": {
+            "left": {
+                "left": {
+                    "left": null,
+                    "node": {
+                        "distance_from_earth": 114.8607853011636,
+                        "sector_code": "114RUF",
+                        "x": 16,
+                        "y": 96,
+                        "z": 61
+                    },
+                    "right": {
+                        "left": {
+                            "left": null,
+                            "node": {
+                                "distance_from_earth": 53.72150407425317,
+                                "sector_code": "53RDF",
+                                "x": 17,
+                                "y": -49,
+                                "z": 14
+                            },
+                            "right": null
+                        },
+                        "node": {
+                            "distance_from_earth": 62.95236294214857,
+                            "sector_code": "62RDF",
+                            "x": 25,
+                            "y": -23,
+                            "z": 53
+                        },
+                        "right": null
+                    }
+                },
+                "node": {
+                    "distance_from_earth": 140.44927910103348,
+                    "sector_code": "140RUB",
+                    "x": 30,
+                    "y": 95,
+                    "z": -99
+                },
+                "right": {
+                    "left": {
+                        "left": null,
+                        "node": {
+                            "distance_from_earth": 70.58328414008518,
+                            "sector_code": "70RDF",
+                            "x": 62,
+                            "y": -7,
+                            "z": 33
+                        },
+                        "right": null
+                    },
+                    "node": {
+                        "distance_from_earth": 88.90444308357148,
+                        "sector_code": "88RUF",
+                        "x": 68,
+                        "y": 12,
+                        "z": 56
+                    },
+                    "right": null
+                }
+            },
+            "node": {
+                "distance_from_earth": 113.28724553099524,
+                "sector_code": "113RDB",
+                "x": 72,
+                "y": -87,
+                "z": -9
+            },
+            "right": {
+                "left": null,
+                "node": {
+                    "distance_from_earth": 107.37783756436893,
+                    "sector_code": "107RUB",
+                    "x": 81,
+                    "y": 37,
+                    "z": -60
+                },
+                "right": null
+            }
+        }
+    }
+}

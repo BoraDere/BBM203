@@ -15,7 +15,6 @@ void KNN::train(Dataset& data) {
 // Predict function implementation
 int KNN::predict(const Point& queryPoint) {
     // returns if the given queryPoint is habitable (1) or not (0)
-    return 0;
 }
 
 // Additional methods or helper functions can be added as needed

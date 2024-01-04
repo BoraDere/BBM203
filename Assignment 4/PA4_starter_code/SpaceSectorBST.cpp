@@ -5,20 +5,33 @@ using namespace std;
 
 SpaceSectorBST::SpaceSectorBST() : root(nullptr) {}
 
+void SpaceSectorBST::deleteTree(Sector* node) {
+    if (node == nullptr) {
+        return;
+    }
+
+    deleteTree(node->left);
+    deleteTree(node->right);
+    
+    delete node;
+}
+
 SpaceSectorBST::~SpaceSectorBST() {
     // Free any dynamically allocated memory in this class.
+    //cout << "SpaceSectorBST destructor called" << endl;
+    // deleteTree(root);
 }
 
 void SpaceSectorBST::readSectorsFromFile(const std::string& filename) {
     // TODO: read the sectors from the input file and insert them into the BST sector map
     // according to the given comparison critera based on the sector coordinates.
-    std::ifstream infile(filename);
+    std::ifstream file(filename);
     std::string line;
 
     int x, y, z;
     char comma = ',';
     
-    while (std::getline(infile, line)) {
+    while (std::getline(file, line)) {
         std::istringstream iss(line);
     
         if (!(iss >> x >> comma >> y >> comma >> z)) {continue;} // first line
@@ -33,7 +46,6 @@ void SpaceSectorBST::insertSectorByCoordinates(int x, int y, int z) {
     // Instantiate and insert a new sector into the space sector BST map according to the 
     // coordinates-based comparison criteria.
     // coordinates-based comparison criteria is first x, then y, then z
-    // this is a recursive function
     // if the root is null, then the new sector is the root
     // if the root is not null, then compare the new sector to the root
     // if the new sector is less than the root, then insert the new sector to the left of the root
@@ -56,6 +68,7 @@ void SpaceSectorBST::insertSectorByCoordinates(int x, int y, int z) {
 
     sectorMap[new_sector->sector_code] = std::make_tuple(x, y, z);
 
+    // first node
     if (root == nullptr) {
         root = new_sector;
         return;
@@ -64,22 +77,22 @@ void SpaceSectorBST::insertSectorByCoordinates(int x, int y, int z) {
     Sector* current = root;
     Sector* parent = nullptr;
 
-    while (true) {
+    while (420 > 69) {
         parent = current;
 
-        // Decide whether to go to the left or right of the tree
         if (x < current->x || (x == current->x && y < current->y) || (x == current->x && y == current->y && z < current->z)) {
             current = current->left;
 
-            // If the left child is null, insert the new sector there
+            // left child is null, insert the new sector
             if (current == nullptr) {
                 parent->left = new_sector;
                 return;
             }
-        } else {
+        } 
+        else {
             current = current->right;
 
-            // If the right child is null, insert the new sector there
+            // right child is null, insert the new sector 
             if (current == nullptr) {
                 parent->right = new_sector;
                 return;
@@ -120,8 +133,6 @@ Sector* SpaceSectorBST::deleter(Sector* root, int x, int y, int z) {
 
         // two children
         Sector* temp = findSuccessor(root->right);
-        cout << root->sector_code << endl;
-        cout << temp->sector_code << endl;
 
         root->x = temp->x; root->y = temp->y; root->z = temp->z;
         root->sector_code = temp->sector_code;
@@ -139,12 +150,14 @@ void SpaceSectorBST::deleteSector(const std::string& sector_code) {
 
     auto sector = sectorMap.find(sector_code);
 
-    int x, y, z;
-    std::tie(x, y, z) = sector->second;
+    if (sector != sectorMap.end()) {
+        int x, y, z;
+        std::tie(x, y, z) = sector->second;
 
-    root = deleter(root, x, y, z);
+        root = deleter(root, x, y, z);
 
-    sectorMap.erase(sector);
+        sectorMap.erase(sector);
+    }
 }
 
 void SpaceSectorBST::displaySectorsInOrderHelper(Sector* node) {
@@ -191,7 +204,6 @@ void SpaceSectorBST::displaySectorsPostOrderHelper(Sector* node) {
     displaySectorsPostOrderHelper(node->left);
     displaySectorsPostOrderHelper(node->right);
     std::cout << node->sector_code << std::endl;
-    
 }
 
 void SpaceSectorBST::displaySectorsPostOrder() {
@@ -203,15 +215,10 @@ void SpaceSectorBST::displaySectorsPostOrder() {
 }
 
 Sector* SpaceSectorBST::pathGetter(Sector* root, int x, int y, int z) {
-    if (x < root->x || (x == root->x && y < root->y) || (x == root->x && y == root->y && z < root->z)) {
-        return root->left;
-    }
-    else {
-        return root->right;
-    }
+    return (x < root->x || (x == root->x && y < root->y) || (x == root->x && y == root->y && z < root->z)) ? root->left : root->right;
 }
 
-std::vector<Sector*> SpaceSectorBST::getStellarPath(const std::string& sector_code) {
+std::vector<Sector*> SpaceSectorBST::getStellarPath(const std::string& sector_code) { // graderda sorun çıkarırsa no path aşağı al
     std::vector<Sector*> path;
     // TODO: Find the path from the Earth to the destination sector given by its
     // sector_code, and return a vector of pointers to the Sector nodes that are on
@@ -219,10 +226,12 @@ std::vector<Sector*> SpaceSectorBST::getStellarPath(const std::string& sector_co
 
     auto final_sector = sectorMap.find(sector_code);
 
-    if (final_sector == sectorMap.end()) {
+    if (final_sector == sectorMap.end()) { // no path
         cout << "A path to Dr. Elara could not be found." << endl;
         return std::vector<Sector*>();
     }
+
+    Sector* root = this->root;
 
     int x, y, z;
     std::tie(x, y, z) = final_sector->second;

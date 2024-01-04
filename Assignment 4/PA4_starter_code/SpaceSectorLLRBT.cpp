@@ -8,13 +8,13 @@ SpaceSectorLLRBT::SpaceSectorLLRBT() : root(nullptr) {}
 void SpaceSectorLLRBT::readSectorsFromFile(const std::string& filename) {
     // TODO: read the sectors from the input file and insert them into the LLRBT sector map
     // according to the given comparison critera based on the sector coordinates.
-    std::ifstream infile(filename);
+    std::ifstream file(filename);
     std::string line;
 
     int x, y, z;
     char comma = ',';
     
-    while (std::getline(infile, line)) {
+    while (std::getline(file, line)) {
         std::istringstream iss(line);
     
         if (!(iss >> x >> comma >> y >> comma >> z)) {continue;} // first line
@@ -25,9 +25,19 @@ void SpaceSectorLLRBT::readSectorsFromFile(const std::string& filename) {
     }
 }
 
+void SpaceSectorLLRBT::deleteTree(Sector* node) {
+    if (node != nullptr) {
+        deleteTree(node->left);
+        deleteTree(node->right);
+        delete node;
+    }
+}
+
 // Remember to handle memory deallocation properly in the destructor.
 SpaceSectorLLRBT::~SpaceSectorLLRBT() {
     // TODO: Free any dynamically allocated memory in this class.
+    //cout << "SpaceSectorLLRBT destructor called" << endl;
+    deleteTree(root);
 }
 
 bool SpaceSectorLLRBT::isRed(Sector* node) {
@@ -40,18 +50,28 @@ bool SpaceSectorLLRBT::isRed(Sector* node) {
 Sector* SpaceSectorLLRBT::rotateLeft(Sector* node) {
     Sector* child = node->right;
     node->right = child->left;
+    if (child->left != nullptr) {
+        child->left->parent = node;
+    }
     child->left = node;
     child->color = node->color;
     node->color = RED;
+    child->parent = node->parent;
+    node->parent = child;
     return child;
 }
 
 Sector* SpaceSectorLLRBT::rotateRight(Sector* node) {
     Sector* child = node->left;
     node->left = child->right;
+    if (child->right != nullptr) {
+        child->right->parent = node;
+    }
     child->right = node;
     child->color = node->color;
     node->color = RED;
+    child->parent = node->parent;
+    node->parent = child;
     return child;
 }
 
@@ -59,11 +79,17 @@ void SpaceSectorLLRBT::flip(Sector* node) {
     node->color = !node->color;
     node->left->color = !node->left->color;
     node->right->color = !node->right->color;
+    if (node->left != nullptr) {
+        node->left->parent = node;
+    }
+    if (node->right != nullptr) {
+        node->right->parent = node;
+    }
 }
 
 Sector* SpaceSectorLLRBT::insert(Sector* node, int x, int y, int z) {
     if (node == nullptr) {
-        Sector* new_sector = new Sector(x, y, z);
+        Sector* new_sector = new Sector(x, y, z); 
         new_sector->color = RED; // New nodes are always inserted as RED
         return new_sector;
     }
@@ -167,12 +193,11 @@ void SpaceSectorLLRBT::displaySectorsPostOrder() {
 }
 
 Sector* SpaceSectorLLRBT::pathGetter(Sector* root, int x, int y, int z) {
-    if (x < root->x || (x == root->x && y < root->y) || (x == root->x && y == root->y && z < root->z)) {
-        return root->left;
+    if (!root) {
+        return nullptr;
     }
-    else {
-        return root->right;
-    }
+
+    return (x < root->x || (x == root->x && y < root->y) || (x == root->x && y == root->y && z < root->z)) ? root->left : root->right;
 }
 
 std::vector<Sector*> SpaceSectorLLRBT::getStellarPath(const std::string& sector_code) {
@@ -183,7 +208,7 @@ std::vector<Sector*> SpaceSectorLLRBT::getStellarPath(const std::string& sector_
 
     auto final_sector = sectorMap.find(sector_code);
 
-    if (final_sector == sectorMap.end()) {
+    if (final_sector == sectorMap.end()) { // no path -- THE SAME WITH THE BST ONE
         cout << "A path to Dr. Elara could not be found." << endl;
         return std::vector<Sector*>();
     }
@@ -191,12 +216,14 @@ std::vector<Sector*> SpaceSectorLLRBT::getStellarPath(const std::string& sector_
     int x, y, z;
     std::tie(x, y, z) = final_sector->second;
 
-    while ((root->x != x) || (root->y != y) || (root->z != z)) {
+    while (root && ((root->x != x) || (root->y != y) || (root->z != z))) {
         path.push_back(root);
         root = pathGetter(root, x, y, z);
     }
 
-    path.push_back(root);
+    if (root) {
+        path.push_back(root);
+    }
 
     return path;
 }

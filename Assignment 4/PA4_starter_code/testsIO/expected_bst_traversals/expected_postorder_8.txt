@@ -1,0 +1,14 @@
+
+Space sectors postorder traversal:
+109LDF
+61LUB
+74LUB
+95LDB
+158LUB
+96RDB
+81RDB
+84RDB
+52RDF
+104RUF
+113RDB
+0SSS

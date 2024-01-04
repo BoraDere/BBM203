@@ -1,0 +1,81 @@
+{
+    "left": {
+        "left": {
+            "left": null,
+            "node": {
+                "distance_from_earth": 55.452682532047085,
+                "sector_code": "55LDB",
+                "x": -29,
+                "y": -47,
+                "z": -5
+            },
+            "right": null
+        },
+        "node": {
+            "distance_from_earth": 99.84487968844472,
+            "sector_code": "99LUB",
+            "x": -17,
+            "y": 44,
+            "z": -88
+        },
+        "right": null
+    },
+    "node": {
+        "distance_from_earth": 91.56964562561112,
+        "sector_code": "91RUB",
+        "x": 32,
+        "y": 65,
+        "z": -56
+    },
+    "right": {
+        "left": {
+            "left": {
+                "left": null,
+                "node": {
+                    "distance_from_earth": 52.97169055259611,
+                    "sector_code": "52RDF",
+                    "x": 33,
+                    "y": -6,
+                    "z": 41
+                },
+                "right": null
+            },
+            "node": {
+                "distance_from_earth": 108.16653826391968,
+                "sector_code": "108RUB",
+                "x": 58,
+                "y": 44,
+                "z": -80
+            },
+            "right": {
+                "left": null,
+                "node": {
+                    "distance_from_earth": 111.22949249187465,
+                    "sector_code": "111RUB",
+                    "x": 64,
+                    "y": 50,
+                    "z": -76
+                },
+                "right": null
+            }
+        },
+        "node": {
+            "distance_from_earth": 103.25211862233142,
+            "sector_code": "103RUF",
+            "x": 81,
+            "y": 64,
+            "z": 2
+        },
+        "right": {
+            "left": null,
+            "node": {
+                "distance_from_earth": 118.2455073142316,
+                "sector_code": "118RDF",
+                "x": 83,
+                "y": -62,
+                "z": 57
+            },
+            "right": null
+        }
+    }
+}

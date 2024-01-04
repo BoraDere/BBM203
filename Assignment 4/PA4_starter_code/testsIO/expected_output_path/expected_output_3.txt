@@ -1,0 +1,142 @@
+Space sectors inorder traversal:
+102LUF
+59LDB
+71LUB
+61LDB
+0SSS
+76RDB
+109RDF
+106RUF
+
+Space sectors preorder traversal:
+0SSS
+61LDB
+59LDB
+102LUF
+71LUB
+109RDF
+76RDB
+106RUF
+
+Space sectors postorder traversal:
+102LUF
+71LUB
+59LDB
+61LDB
+76RDB
+106RUF
+109RDF
+0SSS
+
+The stellar path to Dr. Elara: 0SSS->61LDB->59LDB->102LUF
+
+
+
+The stellar path to Dr. Elara: 0SSS->61LDB->59LDB
+
+
+
+A path to Dr. Elara could not be found.
+
+
+A path to Dr. Elara could not be found.
+
+
+The stellar path to Dr. Elara: 0SSS->109RDF
+
+
+
+A path to Dr. Elara could not be found.
+
+
+A path to Dr. Elara could not be found.
+
+
+The stellar path to Dr. Elara: 0SSS
+
+
+
+A path to Dr. Elara could not be found.
+
+
+The stellar path to Dr. Elara: 0SSS->109RDF->106RUF
+
+
+
+The stellar path to Dr. Elara: 0SSS->61LDB
+
+
+
+A path to Dr. Elara could not be found.
+
+Space sectors inorder traversal:
+BLACK sector: 102LUF
+BLACK sector: 59LDB
+RED sector: 71LUB
+BLACK sector: 61LDB
+BLACK sector: 0SSS
+BLACK sector: 76RDB
+BLACK sector: 109RDF
+BLACK sector: 106RUF
+
+Space sectors preorder traversal:
+BLACK sector: 0SSS
+BLACK sector: 59LDB
+BLACK sector: 102LUF
+BLACK sector: 61LDB
+RED sector: 71LUB
+BLACK sector: 109RDF
+BLACK sector: 76RDB
+BLACK sector: 106RUF
+
+Space sectors postorder traversal:
+BLACK sector: 102LUF
+RED sector: 71LUB
+BLACK sector: 61LDB
+BLACK sector: 59LDB
+BLACK sector: 76RDB
+BLACK sector: 106RUF
+BLACK sector: 109RDF
+BLACK sector: 0SSS
+
+The stellar path to Dr. Elara: 0SSS->59LDB->102LUF
+
+
+
+The stellar path to Dr. Elara: 0SSS->59LDB
+
+
+
+A path to Dr. Elara could not be found.
+
+
+A path to Dr. Elara could not be found.
+
+
+The stellar path to Dr. Elara: 0SSS->109RDF
+
+
+
+A path to Dr. Elara could not be found.
+
+
+A path to Dr. Elara could not be found.
+
+
+The stellar path to Dr. Elara: 0SSS
+
+
+
+A path to Dr. Elara could not be found.
+
+
+The stellar path to Dr. Elara: 0SSS->109RDF->106RUF
+
+
+
+The stellar path to Dr. Elara: 0SSS->59LDB->61LDB
+
+
+
+A path to Dr. Elara could not be found.
+

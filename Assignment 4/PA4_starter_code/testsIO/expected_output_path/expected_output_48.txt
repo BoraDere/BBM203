@@ -1,0 +1,134 @@
+Space sectors inorder traversal:
+114LDF
+163LDF
+90LUF
+111LUF
+81LUB
+83LUB
+134LDF
+0SSS
+108RUB
+65RUF
+96RDB
+98RDF
+133RUB
+151RUF
+
+Space sectors preorder traversal:
+0SSS
+114LDF
+111LUF
+163LDF
+90LUF
+81LUB
+134LDF
+83LUB
+133RUB
+96RDB
+65RUF
+108RUB
+98RDF
+151RUF
+
+Space sectors postorder traversal:
+90LUF
+163LDF
+83LUB
+134LDF
+81LUB
+111LUF
+114LDF
+108RUB
+65RUF
+98RDF
+96RDB
+151RUF
+133RUB
+0SSS
+
+The stellar path to Dr. Elara: 0SSS->133RUB->151RUF
+
+
+
+The stellar path to Dr. Elara: 0SSS->114LDF->111LUF->81LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->133RUB->96RDB->65RUF->108RUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->114LDF->111LUF->81LUB->134LDF->83LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->133RUB->96RDB->98RDF
+
+
+Space sectors inorder traversal:
+BLACK sector: 114LDF
+BLACK sector: 163LDF
+BLACK sector: 90LUF
+RED sector: 111LUF
+BLACK sector: 81LUB
+BLACK sector: 83LUB
+BLACK sector: 134LDF
+BLACK sector: 0SSS
+RED sector: 108RUB
+BLACK sector: 65RUF
+RED sector: 96RDB
+BLACK sector: 98RDF
+BLACK sector: 133RUB
+BLACK sector: 151RUF
+
+Space sectors preorder traversal:
+BLACK sector: 0SSS
+RED sector: 111LUF
+BLACK sector: 163LDF
+BLACK sector: 114LDF
+BLACK sector: 90LUF
+BLACK sector: 83LUB
+BLACK sector: 81LUB
+BLACK sector: 134LDF
+BLACK sector: 133RUB
+RED sector: 96RDB
+BLACK sector: 65RUF
+RED sector: 108RUB
+BLACK sector: 98RDF
+BLACK sector: 151RUF
+
+Space sectors postorder traversal:
+BLACK sector: 114LDF
+BLACK sector: 90LUF
+BLACK sector: 163LDF
+BLACK sector: 81LUB
+BLACK sector: 134LDF
+BLACK sector: 83LUB
+RED sector: 111LUF
+RED sector: 108RUB
+BLACK sector: 65RUF
+BLACK sector: 98RDF
+RED sector: 96RDB
+BLACK sector: 151RUF
+BLACK sector: 133RUB
+BLACK sector: 0SSS
+
+The stellar path to Dr. Elara: 0SSS->133RUB->151RUF
+
+
+
+The stellar path to Dr. Elara: 0SSS->111LUF->83LUB->81LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->133RUB->96RDB->65RUF->108RUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->111LUF->83LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->133RUB->96RDB->98RDF
+
+

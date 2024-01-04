@@ -1,0 +1,138 @@
+Space sectors inorder traversal:
+125LDF
+111LUB
+77LUB
+120LUB
+94LUB
+0SSS
+75RUF
+66RUF
+45RDF
+98RDB
+140RUF
+101RUF
+
+Space sectors preorder traversal:
+0SSS
+94LUB
+111LUB
+125LDF
+77LUB
+120LUB
+75RUF
+45RDF
+66RUF
+140RUF
+98RDB
+101RUF
+
+Space sectors postorder traversal:
+125LDF
+120LUB
+77LUB
+111LUB
+94LUB
+66RUF
+98RDB
+101RUF
+140RUF
+45RDF
+75RUF
+0SSS
+
+The stellar path to Dr. Elara: 0SSS->75RUF
+
+
+
+The stellar path to Dr. Elara: 0SSS->94LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->75RUF->45RDF->140RUF->101RUF
+
+
+
+The stellar path to Dr. Elara: 0SSS
+
+
+
+The stellar path to Dr. Elara: 0SSS->94LUB->111LUB->77LUB->120LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->94LUB->111LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->75RUF->45RDF
+
+
+Space sectors inorder traversal:
+RED sector: 125LDF
+BLACK sector: 111LUB
+BLACK sector: 77LUB
+RED sector: 120LUB
+BLACK sector: 94LUB
+BLACK sector: 0SSS
+RED sector: 75RUF
+BLACK sector: 66RUF
+RED sector: 45RDF
+BLACK sector: 98RDB
+BLACK sector: 140RUF
+BLACK sector: 101RUF
+
+Space sectors preorder traversal:
+BLACK sector: 0SSS
+BLACK sector: 77LUB
+BLACK sector: 111LUB
+RED sector: 125LDF
+BLACK sector: 94LUB
+RED sector: 120LUB
+BLACK sector: 140RUF
+RED sector: 45RDF
+BLACK sector: 66RUF
+RED sector: 75RUF
+BLACK sector: 98RDB
+BLACK sector: 101RUF
+
+Space sectors postorder traversal:
+RED sector: 125LDF
+BLACK sector: 111LUB
+RED sector: 120LUB
+BLACK sector: 94LUB
+BLACK sector: 77LUB
+RED sector: 75RUF
+BLACK sector: 66RUF
+BLACK sector: 98RDB
+RED sector: 45RDF
+BLACK sector: 101RUF
+BLACK sector: 140RUF
+BLACK sector: 0SSS
+
+The stellar path to Dr. Elara: 0SSS->140RUF->45RDF->66RUF->75RUF
+
+
+
+The stellar path to Dr. Elara: 0SSS->77LUB->94LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->140RUF->101RUF
+
+
+
+The stellar path to Dr. Elara: 0SSS
+
+
+
+The stellar path to Dr. Elara: 0SSS->77LUB->94LUB->120LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->77LUB->111LUB
+
+
+
+The stellar path to Dr. Elara: 0SSS->140RUF->45RDF
+
+

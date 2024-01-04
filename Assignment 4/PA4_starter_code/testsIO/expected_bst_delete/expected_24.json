@@ -1,0 +1,141 @@
+{
+    "left": {
+        "left": {
+            "left": {
+                "left": null,
+                "node": {
+                    "distance_from_earth": 109.60839383915814,
+                    "sector_code": "109LUB",
+                    "x": -77,
+                    "y": 46,
+                    "z": -63
+                },
+                "right": null
+            },
+            "node": {
+                "distance_from_earth": 115.62871615649809,
+                "sector_code": "115LDF",
+                "x": -76,
+                "y": -5,
+                "z": 87
+            },
+            "right": {
+                "left": null,
+                "node": {
+                    "distance_from_earth": 78.65748533992172,
+                    "sector_code": "78LDB",
+                    "x": -61,
+                    "y": -21,
+                    "z": -45
+                },
+                "right": null
+            }
+        },
+        "node": {
+            "distance_from_earth": 103.860483341837,
+            "sector_code": "103LUF",
+            "x": -29,
+            "y": 45,
+            "z": 89
+        },
+        "right": null
+    },
+    "node": {
+        "distance_from_earth": 0.0,
+        "sector_code": "0SSS",
+        "x": 0,
+        "y": 0,
+        "z": 0
+    },
+    "right": {
+        "left": {
+            "left": {
+                "left": null,
+                "node": {
+                    "distance_from_earth": 99.89494481704267,
+                    "sector_code": "99RDB",
+                    "x": 3,
+                    "y": -13,
+                    "z": -99
+                },
+                "right": {
+                    "left": null,
+                    "node": {
+                        "distance_from_earth": 110.65712810298305,
+                        "sector_code": "110RUF",
+                        "x": 28,
+                        "y": 81,
+                        "z": 70
+                    },
+                    "right": null
+                }
+            },
+            "node": {
+                "distance_from_earth": 91.40021881811882,
+                "sector_code": "91RUF",
+                "x": 35,
+                "y": 27,
+                "z": 80
+            },
+            "right": {
+                "left": null,
+                "node": {
+                    "distance_from_earth": 87.16650732936361,
+                    "sector_code": "87RDF",
+                    "x": 37,
+                    "y": -30,
+                    "z": 73
+                },
+                "right": {
+                    "left": null,
+                    "node": {
+                        "distance_from_earth": 58.532042506647585,
+                        "sector_code": "58RUB",
+                        "x": 37,
+                        "y": 11,
+                        "z": -44
+                    },
+                    "right": null
+                }
+            }
+        },
+        "node": {
+            "distance_from_earth": 65.90902821313632,
+            "sector_code": "65RUF",
+            "x": 38,
+            "y": 28,
+            "z": 46
+        },
+        "right": {
+            "left": {
+                "left": null,
+                "node": {
+                    "distance_from_earth": 53.60970061472084,
+                    "sector_code": "53RDF",
+                    "x": 43,
+                    "y": -31,
+                    "z": 8
+                },
+                "right": null
+            },
+            "node": {
+                "distance_from_earth": 103.46980235798269,
+                "sector_code": "103RUF",
+                "x": 59,
+                "y": 68,
+                "z": 51
+            },
+            "right": {
+                "left": null,
+                "node": {
+                    "distance_from_earth": 125.32757078951144,
+                    "sector_code": "125RDF",
+                    "x": 89,
+                    "y": -81,
+                    "z": 35
+                },
+                "right": null
+            }
+        }
+    }
+}

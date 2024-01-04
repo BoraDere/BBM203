@@ -1,0 +1,51 @@
+{
+    "left": {
+        "left": {
+            "left": null,
+            "node": {
+                "distance_from_earth": 102.56705123966468,
+                "sector_code": "102LUB",
+                "x": -100,
+                "y": 6,
+                "z": -22
+            },
+            "right": {
+                "left": null,
+                "node": {
+                    "distance_from_earth": 81.64557550780079,
+                    "sector_code": "81LDB",
+                    "x": -29,
+                    "y": -40,
+                    "z": -65
+                },
+                "right": null
+            }
+        },
+        "node": {
+            "distance_from_earth": 70.58328414008518,
+            "sector_code": "70LDF",
+            "x": -18,
+            "y": -43,
+            "z": 53
+        },
+        "right": null
+    },
+    "node": {
+        "distance_from_earth": 76.79843748410511,
+        "sector_code": "76RDB",
+        "x": 64,
+        "y": -31,
+        "z": -29
+    },
+    "right": {
+        "left": null,
+        "node": {
+            "distance_from_earth": 108.58176642512315,
+            "sector_code": "108RDB",
+            "x": 89,
+            "y": -50,
+            "z": -37
+        },
+        "right": null
+    }
+}

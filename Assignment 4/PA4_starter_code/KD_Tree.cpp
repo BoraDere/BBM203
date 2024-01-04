@@ -19,7 +19,6 @@ void KD_Tree::build(Dataset& data) {
 
 KDTreeNode* KD_Tree::getRoot() {
     // Implementation to return the root of the KD_Tree
-    return nullptr;
 }
 
 // Add any additional function as you wish

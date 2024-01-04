@@ -1,0 +1,14 @@
+
+Space sectors preorder traversal:
+0SSS
+158LUB
+95LDB
+74LUB
+61LUB
+109LDF
+113RDB
+104RUF
+84RDB
+81RDB
+96RDB
+52RDF

@@ -1,0 +1,81 @@
+{
+    "left": {
+        "left": {
+            "left": null,
+            "node": {
+                "distance_from_earth": 139.30541985149034,
+                "sector_code": "139LDB",
+                "x": -91,
+                "y": -71,
+                "z": -78
+            },
+            "right": null
+        },
+        "node": {
+            "distance_from_earth": 96.6126285741155,
+            "sector_code": "96LUF",
+            "x": -78,
+            "y": 57,
+            "z": 1
+        },
+        "right": null
+    },
+    "node": {
+        "distance_from_earth": 0.0,
+        "sector_code": "0SSS",
+        "x": 0,
+        "y": 0,
+        "z": 0
+    },
+    "right": {
+        "left": {
+            "left": {
+                "left": {
+                    "left": null,
+                    "node": {
+                        "distance_from_earth": 120.42009799032718,
+                        "sector_code": "120RDB",
+                        "x": 1,
+                        "y": -90,
+                        "z": -80
+                    },
+                    "right": null
+                },
+                "node": {
+                    "distance_from_earth": 73.8850458482635,
+                    "sector_code": "73RUB",
+                    "x": 11,
+                    "y": 37,
+                    "z": -63
+                },
+                "right": null
+            },
+            "node": {
+                "distance_from_earth": 102.79105019407089,
+                "sector_code": "102RUF",
+                "x": 19,
+                "y": 94,
+                "z": 37
+            },
+            "right": null
+        },
+        "node": {
+            "distance_from_earth": 65.91661399070799,
+            "sector_code": "65RDF",
+            "x": 30,
+            "y": -14,
+            "z": 57
+        },
+        "right": {
+            "left": null,
+            "node": {
+                "distance_from_earth": 123.5677951571525,
+                "sector_code": "123RUF",
+                "x": 79,
+                "y": 82,
+                "z": 48
+            },
+            "right": null
+        }
+    }
+}

@@ -24,6 +24,7 @@ public:
     void displaySectorsPostOrder();
     std::vector<Sector*> getStellarPath(const std::string& sector_code);
     void printStellarPath(const std::vector<Sector*>& path);
+    
     void displaySectorsInOrderHelper(Sector* node);
     void displaySectorsPreOrderHelper(Sector* node);
     void displaySectorsPostOrderHelper(Sector* node);
@@ -31,6 +32,7 @@ public:
     Sector* deleter(Sector* root, int x, int y, int z);
     std::unordered_map<std::string, std::tuple<int, int, int>> sectorMap;
     Sector* pathGetter(Sector* root, int x, int y, int z);
+    void deleteTree(Sector* node);
 };
 
 #endif // SPACESECTORBST_H
